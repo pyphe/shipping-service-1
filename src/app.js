@@ -2,9 +2,7 @@ const express = require('express')
 const app = express()
 const ShippingController = require('../src/controllers/shipping-controller')
 
-let PORT = process.env.PORT || 3001;
-
-app.get('/shipping/:itemID/:type', (request, response) => {
+app.get('/shipping/', (request, response) => {
     let ctrl = new ShippingController()
 
     ctrl
@@ -18,4 +16,5 @@ app.get('/shipping/:itemID/:type', (request, response) => {
         })
 })
 
-app.listen(PORT, () => console.log('ShippingService is listening on port ${PORT}'))
+let PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log('ShippingService is listening on port ' + PORT))
