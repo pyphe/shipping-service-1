@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests",
+    "start": "node src/app.js"
   },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x"
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vincenthodicq/shipping-service.git"
