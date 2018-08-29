@@ -2,13 +2,13 @@ const express = require('express')
 const app = express()
 const ShippingController = require('../src/controllers/shipping-controller')
 
-app.get('/shipping/', (request, response) => {
+app.get('/shipping/:itemID/:type', (request, response) => {
     let ctrl = new ShippingController()
 
     ctrl
-        .getItemShipping({id: request.query.itemID, type: request.query.type})
+        .getItemShipping({id: request.params.itemID, type: request.params.type})
         .then(amount => {
-            response.send({ product: request.query.itemID, priceUSD: amount})
+            response.send({ product: request.params.itemID, priceUSD: amount})
         })  
 
         .catch(error => {
