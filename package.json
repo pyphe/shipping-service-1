@@ -10,7 +10,7 @@
   "engines": {
     "node": "8.11.3",
     "npm": "5.6.x"
- },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vincenthodicq/shipping-service.git"
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/vincenthodicq/shipping-service#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "mocha": "^5.2.0",
     "nock": "^9.6.1",
     "sinon": "^6.1.5"
   },
