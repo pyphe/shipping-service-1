@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "jscs": "^3.0.7"
   }
 }

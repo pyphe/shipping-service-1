@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: shipping-service-33
+  name: shipping-service-33
+  namespace: lab-cph
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shipping-service-33
+    spec:
+      containers:
+      - image: mycluster.icp:8500/lab-cph/shipping-service-33:v1.0.0
+        name: shipping-service-33
+        ports:
+        - containerPort: 3001
+          protocol: TCP
