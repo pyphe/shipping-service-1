@@ -13,7 +13,7 @@ spec:
         app: shipping-service-33
     spec:
       containers:
-      - image: mycluster.icp:8500/lab-cph/shipping-service-33:v1.0.0
+      - image: mycluster.icp:8500/lab-cph/shipping-service-33:latest
         name: shipping-service-33
         ports:
         - containerPort: 3001
